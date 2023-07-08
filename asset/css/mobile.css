@@ -1,0 +1,160 @@
+/* css class to mobile and tablet */
+
+.mobile-header__btn {
+    padding: 5px;
+    margin: auto 0 auto 1px;
+    font-size: 1.6rem;
+    display: inline-block;
+    color: var(--while-color);
+}
+
+.mobile-main__heading {
+    font-size: 2.2rem;
+    padding: 31px 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.mobile-main__heading::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 22px;
+    left: 50%;
+    border-bottom: 2px solid #b3b3b3;
+    transform: translateX(-50%);
+    
+}
+
+@keyframes faceInNavbar {
+    from {
+        transform: translateX(-100%);
+    }    
+    to {
+        transform: translateX(0);
+    }
+}
+
+.mobile-navbar__overlay {
+    position: fixed;
+    z-index: 10;
+    display: none;
+    animation: faceOverlay linear 0.5s;
+    
+}
+
+.mobile-navbar__wrapper {
+    position: fixed;
+    height: 100%;
+    max-width: 320px;
+    width: 100%;
+    background-color: #16c0d6;
+    z-index: 15;
+    top: 0;
+    display: none;
+    animation: faceInNavbar linear 1s;
+}
+
+.mobile__navbar__btn {
+    display: none;
+}
+
+.mobile__navbar__btn:checked ~ .mobile-navbar__wrapper {
+    display: block;
+}
+
+.mobile__navbar__btn:checked ~ .mobile-navbar__overlay {
+    display: block;
+}
+
+.mobile__navbar__btn:checked ~ .mobile__navbar__close {
+    display: block;
+}
+
+.mobile-navbar__wrapper .navbar-main {
+    margin: 0 auto 10px;
+    width: 95%;
+}
+
+.mobile-navbar__wrapper .navbar-main__item {
+    display: block;
+    position: relative;
+    display: flex;
+}
+
+.mobile-navbar__wrapper .navbar-main__link {
+    padding: 8px 0;
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 22;
+    width: 70%;
+   
+}
+
+.navbar-main__btn {
+    height: 20px;
+    width: 30px;
+    font-size: 1.4rem;
+    display: inline-block;
+    z-index: 25;
+    text-align: center;
+    margin-left: 185px;
+    margin-left: auto;
+}
+
+.mobile-navbar__wrapper .navbar-main__icon {
+    padding-left: 2px;
+    font-size: 1.6rem;
+    
+}
+
+.mobile-navbar__wrapper .navbar-dropdown {
+    top: 35px;
+    left: 0px;
+    min-width: 275px;
+}
+
+.mobile-username {
+    margin: 0 auto 8px;
+    width: 95%;
+    display: flex;
+    padding: 10px 0 12px;
+    border-bottom: 1px solid yellow;
+}
+
+.mobile-username__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.mobile-username__info {
+    padding-left: 8px;
+    flex: 1;
+}
+
+.mobile-username__name {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--while-color);
+}
+
+.mobile-username__email {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #e5e5e5;
+}
+
+.mobile__navbar__close {
+    top: 8px;
+    right: 8px;
+    color: var(--while-color);
+}
+
+.mobile-username .header-username__link {
+    padding-top: 0;
+    font-size: 2rem;
+    color: var(--while-color);
+}

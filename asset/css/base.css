@@ -1,0 +1,187 @@
+:root {
+    --while-color: #fff;
+    --text-color: #666;
+    --orange-color: #f67f55;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* 
+    mặt định
+    * Class: chung
+    * hide
+    * show
+*/
+
+.pc-on-hide {
+    display: none;
+}
+
+.pc-on-show {
+    display: block;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    min-width: 30px;
+    padding: 6px 0 14px 6px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+tbody {
+    margin-top: 12px;
+}
+
+td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.container__widt {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+/* link */
+
+.active-link {
+    display: block;
+    padding: 6px 6px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    text-decoration: none;
+    -webkit-box-direction: unset;
+    font-size: 700;
+    font-family: Arial;
+}
+
+.btn {
+    min-width: 120px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial;
+    -webkit-box-direction: unset;
+    display: block;
+}
+
+
+/* product */
+
+.product__wap {
+    max-width: 1065px;
+    width: 100%;
+}
+
+
+/* overlay */
+
+.mobile-category__overlay,
+.mobile-header__cart--overlay,
+.mobile-header__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+    display: none;
+}
+
+.mobile-header__contents {
+    position: fixed;
+    min-width: 320px;
+    max-width: 320px;
+    height: 100%;
+    background-color: var(--while-color);
+    display: none;
+    z-index: 20;
+    animation: facenav ease-in-out 1.8s;
+}
+
+
+/* close */
+
+.mobile-header__close {
+    position: fixed;
+    font-size: 2.5rem;
+    color: #d0c6c6;
+    display: none;
+    z-index: 28;
+}
+
+
+/* Page */
+
+.page-main {
+    width: 100%;
+}
+
+.page-main__list {
+    width: 100%;
+    text-align: center;
+}
+
+.page-main__item {
+    display: inline-block;
+}
+
+.page-main__link {
+    padding: 6px 8px;
+    font-size: 1.8rem;
+    border-radius: 2px;
+}
+
+.page-main__link--active {
+    background-color: blue;
+    color: var(--while-color);
+}
+
+
+/* Position */
+
+.position {
+    position: absolute;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: faceOverlay ease 1s;
+}
+
+.d-flex {
+    display: flex;
+}
+
+@keyframes faceOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javasrcipt</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+    <input type="text" name="user" id="user">
+    <button type="button">load </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'JSON',
+                    data: {id: 5}, 
+                    url: ''
+                })
+            })
+        });
+
+       // document.getElementById('demo').innerHTML = '<h1>xin chào</h1>';
+       // document.getElementById('user').value = 'admin';
+
+       var name = 'nguyễn văn a';
+       let name1 = 'nguyễn văn a 1';
+       const name2 = 'nguyễn văn a 2';
+
+
+       var a = 18;
+       var b = '12';
+
+      // console.log(a === b);
+      // console.log(a + parseInt(b));
+
+      //var resuit = a == 12 ? true : false;
+     // console.log(resuit);
+
+     class DongVat{
+         constructor(name, chan){
+             this.name = name;
+             this.sochan = chan;
+         }
+         ten(){
+             return 'Tên: ' + this.name;
+         }
+         sochan(){
+             return 'Có: ' + this.chan;
+         }
+     }
+
+     var meo = new DongVat('mèo mun', '4 chân');
+     console.log(meo.ten());
+     console.log(meo.sochan);
+
+     var cho = new DongVat('chó cỏ', '4 chân');
+     console.log(cho.ten());
+     console.log(cho.sochan);
+
+    </script>
+
+
+
+</body>
+</html>

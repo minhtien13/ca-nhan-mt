@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form-group {
+            border-bottom: 1px solid #cdcdcd;
+            padding: 10px;
+        }
+    </style>
+    <script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+
+    <!--
+        - input
+            type
+                - text: Kiểu nhập liệu text
+                    - placeholder: Gợi ý nội dung nhập
+                    - value: giá trị mặt định
+                    - disabled: Khóa không cho chỉnh sửa và khi gửi lên server sẽ k nhận được dữ liệu
+                    - readonly: Khóa không cho chỉnh sửa và khi gửi lên server sẽ nhận được dữ liệu
+                    - required: Băt buộc nhập không để trống
+                - radio: Chọn
+                    => Mặt định phải cho nó 1 value
+                    attr name: phải trùng tên trong 1 phần 
+                    - checked: chọn trước 1 value
+                - checkbox: chọn được nhiều value và nhớ tên phải đưa về dạng mảng: vd: monhoc[]
+        -select 
+            - multiple: chọn được nhiều option => value => tinhthanh[]
+            - size="2" : chiều cao của khung select là 2 rows
+            - selected: chọn trước 1 value
+    -->
+
+
+    <form action="form.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Tên đăng nhập</label>
+            <input type="text" name="username" placeholder="Nhập tên tài khoản ít nhất 5 ký tự" required>
+        </div>
+
+        <div class="form-group">
+            <label>Trạng Thái</label><br/>
+            <input type="radio" name="active" value="1" id="yes" checked> <label for="yes">Yes</label> <br > <!-- YES => 10s, 0 => 3s -->
+            <input type="radio" name="active" value="0" id="no"> <label for="no">No</label> <br >
+        </div>
+
+        <div class="form-group">
+            <label>Môn học yêu thích</label><br/>
+            <input type="checkbox" name="monhoc[]" value="1" id="toan" checked> <label for="toan">Toán</label> <br />
+            <input type="checkbox" name="monhoc[]" value="2" id="ly" checked> <label for="ly">Lý</label> <br />
+            <input type="checkbox" name="monhoc[]" value="3" id="hoa"> <label for="hoa">Hóa</label> <br />
+            <input type="checkbox" name="monhoc[]" value="4" id="sinh"> <label for="sinh">Sinh</label> <br />
+        </div>
+
+        <div class="form-group">
+            <label>Tỉnh thành</label><br/>
+            <!-- <select name="tinhthanh[]" multiple size="5"> -->
+            <select name="tinhthanh">
+                <option value="1">Hà Nội</option>
+                <option value="2">Hồ Chí Minh</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4" selected>Quảng Ngãi</option>
+                <option value="5">Cà Mau</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Nội dung</label><br/>
+            <textarea name="content" id="content" cols="100" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Upload File</label><br/>
+            <input type="file" name="file[]" multiple accept=".xlsx,.xls,.csv">
+        </div>
+
+        <br />
+        <input type="date" name="date"> <br />
+        <input type="color" name="color"> <br />
+        <input type="email" name="email" required> <br />
+
+        <button type="submit">Gửi</button>
+    </form>
+
+
+    <script>
+        CKEDITOR.replace('content', {height: 200});
+    </script>
+</body>
+</html>

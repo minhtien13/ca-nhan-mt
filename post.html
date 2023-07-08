@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font -->
+    <link rel="stylesheet" href="./asset/font/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./asset/css/reset.css" />
+    <link rel="stylesheet" href="./asset/css/grid.css" />
+    <link rel="stylesheet" href="./asset/css/base.css" />
+    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="./asset/css/mobile.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
+    
+    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__wrapper">
+                <!--  header__hide -->
+                <div class="header__wra">
+                    <div class="container__widt">
+                        <div class="header-logo">
+                            <a href="" class="header-logo__link">
+                                <img src="./asset/images/logo.jpg" alt="" class="header-logo__image" />
+                            </a>
+                        </div>
+
+                        <div class="header-search hide-on-mobile-tablet">
+                            <div class="header-search__war">
+                                <button class="header-search__btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                                <input type="text" class="header-search__input" placeholder="Tìm Kiếm">
+                            </div>
+                        </div>
+
+                        <div class="header-username__wrapper hide-on-mobile">
+                            <div class="header-username">
+                                <!-- <a href="" class="active-link header-username__link ">
+                                <i class="fas fa-user-circle"></i>
+                            </a> -->
+
+
+                                <label for="showaccount" class="header-username__label">
+                            <img src="./asset/images/thumb3.png" alt="" class="header-username__image">
+                            </label>
+
+                                <input type="checkbox" hidden class="show_box" id="showaccount">
+
+                                <div class="header-username__box">
+                                    <h2 class="header-username__heading">tài khoảng</h2>
+                                    <div class="header-box__war">
+                                        <div class="header-box__wrapper">
+                                            <img src="./asset/images/thumb3.png" alt="" class="header-box__image">
+                                        </div>
+                                        <div class="header-box__wrapper">
+                                            <h3 class="header-box__name">họ ten</h3>
+                                        </div>
+
+                                        <div class="header-box__wrapper">
+                                            <a href="" class="active-link header-box__link">Đăng xuất</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar ">
+                    <!-- navbar__fixed -->
+                    <div class="container__widt">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col m-6 c-6 pc-on-hide mobile-d-flex">
+                                    <label for="mobile__navbar__btn" class="mobile-header__btn  pc-on-hide show-on-mobile-tablet">
+                                        <i class="fas fa-list"></i>
+                                    </label>
+                                    
+                                    <input type="checkbox" class="mobile__navbar__btn" id="mobile__navbar__btn">
+                                   
+                                    <label for="mobile__navbar__btn" class="mobile-header__close mobile__navbar__close">
+                                        <i class="fas fa-times"></i>
+                                    </label>
+
+                                    <label for="mobile__navbar__btn" class="overlay mobile-navbar__overlay"></label>
+                                    <div class="mobile-navbar__wrapper">
+                                        <div class="mobile-username">
+                                            <a href="" class="active-link header-username__link hide-on-mobile-tablet">
+                                                <i class="fas fa-user-circle"></i>
+                                            </a>
+
+                                            <div class="mobile-username__image">
+                                                <img src="./asset/images/thumb3.png" alt="" class="mobile-username__image">
+                                            </div>
+
+                                            <div class="mobile-username__info">
+                                                <h2 class="mobile-username__name">nguyen minh tien</h2>
+                                                <p class="mobile-username__email">minhtien003@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="navbar-main">
+                                            <ul class="navbar-main__list ">
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">trang chủ</a>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">tin tức</a>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">lập trình</a>
+                                                    <div class="navbar-main__btn">
+                                                         <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                    </div>
+                                                   
+                                                    <div class="navbar-dropdown">
+                                                        <div class="navbar-dropdown__wrapper">
+                                                            <ul class="navbar-dropdown__list">
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình php</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình javascript</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình nodejs</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình python</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình java</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">tình yêu</a>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">công nghệ</a>
+                                                    <div class="navbar-main__btn">
+                                                        <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                   </div>
+                                                   
+                                                    <div class="navbar-dropdown">
+                                                        <div class="navbar-dropdown__wrapper">
+                                                            <ul class="navbar-dropdown__list">
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">nhúng</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">AI</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">giói thiệu</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l-6 m-6 c-6">
+                                    <h4 class="navbar__heading show-on-mobile-tablet">blog minh tiến</h4>
+                                </div>
+                                <div class="col l-6 m-8 c-0 hide-on-mobile-tablet">
+                                    <div class="navbar-main">
+                                        <ul class="navbar-main__list hide-on-mobile">
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">trang chủ</a>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">tin tức</a>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">lập trình</a>
+                                                <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                <div class="navbar-dropdown">
+                                                    <div class="navbar-dropdown__wrapper">
+                                                        <ul class="navbar-dropdown__list">
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình php</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình javascript</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình nodejs</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình python</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình java</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">tình yêu</a>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">công nghệ</a>
+                                                <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                <div class="navbar-dropdown">
+                                                    <div class="navbar-dropdown__wrapper">
+                                                        <ul class="navbar-dropdown__list">
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">nhúng</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">AI</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">giói thiệu</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main content-post">
+            <div class="main-container ">
+                <div class="container__widt">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-8 m-12 c-12">
+                                <div class="main-post">
+                                    <div class="content-post__header">
+                                        <ul class="main-post__list">
+                                            <il class="main-post__item">
+                                                <a href="" class="active-link main-post__link">lập trình</a>
+                                            </il>
+                                            <il class="main-post__item">
+                                                <a href="" class="active-link main-post__link">tư duy</a>
+                                            </il>
+                                        </ul>
+
+                                        <h2 class="content-post__title">
+                                            chia sẽ kinh nghiệm quá trình đi làm lập trình backend thật tế ở công ty tại sài gòn
+                                        </h2>
+
+                                        <div class="content-post__info">
+                                            <div class="content-post__author">
+                                                <div class="main-post__element main-post__author">
+                                                    <img src="./asset/images/avatar.jpg" alt="" class="main-info__image">
+                                                    <b class="main-info__title">
+                                                            nguyễn minh tiến
+                                                    </b>
+                                                </div>
+                                            </div>
+                                          
+                                            <p class="main-post__element main-post__deta"> <i class="fas fa-clock"></i> 4/2/2023</p>
+                                        </div>
+
+                                        <div class="content-post__img">
+                                            <img src="https://images.unsplash.com/photo-1573166364902-982ae58a27ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="" class="content-post__image">
+                                            <div class="overlay main-post__overlay"></div>
+                                        </div>
+
+                                        <div class="content-post__container">
+                                            Các câu hỏi trên Reddit hoặc Quora thường có dòng "Làm cách nào để biết liệu tôi có thành công với tư cách là một lập trình viên hay không?", đặt biệt là khi ai đó đang cân nhắc thay đổi nghề nghiệp, hoặc tò mò về phát triển phần mềm.
+
+                                            Trên thực tế, đây là một rào cản lớn trong suy nghĩ khi những người không được đào tạo chính thức về máy tính muốn gia nhập thế giới lập trình. Quá là điều bình thường khi bạn nghĩ rằng nếu bạn không giỏi việc này, thì mong muốn của bạn là vô nghĩa. Giống như nếu bạn muốn trở thành một diễn viên và tự hỏi liệu mình có diễn xuất giỏi không.
+
+                                            Tác giả bài viết là một giảng viên dạy lập trình Web full-stack khẳng định rằng: hiếm khi thấy một sinh viên không thể học lập trình, kể cả những người lần đầu tiếp xúc. Lập trình như một kỹ năng cơ bản của con người, giống như đọc, viết và số học. Ai cũng có thể làm được, đó là một phần năng lực của con người chúng ta, nhưng cần phải đầu tư thời gian để trau dồi và học hỏi. Tuy nhiên, ông cũng đã chứng kiến nhiều sinh viên vật lộn với việc lập trình theo nhiều kiểu. Và nếu bạn nhìn thấy chính mình trong danh sách này, bạn thực sự tệ ở lập trình và có lẽ nên tìm một công việc khác. Nhưng nếu bạn vẫn cam kết với mục tiêu trở thành lập trình viên, bạn có thể dễ dàng đối mặt với những vấn đề này và thay đổi.
+
+                                            “Lập trình là một kỹ năng cơ bản của con người, giống như đọc, viết và số học. Bất cứ ai cũng có thể học lập trình với thời gian và nỗ lực.”
+
+                                            Danh sách sau đây sẽ giúp bạn biết liệu bạn có tệ ở lập trình không - và bạn có thể làm gì với nó nếu muốn thay đổi.
+
+                                            1. Thiếu tò mò
+                                            Nếu bạn thiếu sự tò mò về máy tính và cách thức hoạt động của công nghệ, bạn sẽ không bao giờ thành công với tư cách là một lập trình viên.
+
+                                            Yêu cầu cơ bản cho việc học là sự quan tâm tích cực đối với điều bạn đang học. Nếu bạn không sở hữu óc tò mò về công nghệ, bạn sẽ không có đủ nghị lực để kiên trì học hỏi những kiến ​​thức sâu và rộng cần thiết để trở thành một lập trình viên thành công.
+
+                                            Ngược lại, thế giới công nghệ giống như một đại dương khổng lồ gồm những lĩnh vực thú vị, những ý tưởng có liên quan với nhau và những khả năng có thể kích thích trí tưởng tượng. Cần phải có động lực nội tại vốn có để muốn đi sâu vào và khám phá tất cả những gì bạn có thể.
+
+                                            Tìm sự tò mò của bạn: Hãy tự hỏi bản thân xem lập trình có thực sự khiến bạn hứng thú hay không. Nếu câu trả lời trung thực của bạn là không, hãy tìm thứ gì đó mà bạn quan tâm. Tiết kiệm thời gian và năng lượng cho bản thân. Nhưng nếu câu trả lời của bạn là “Có”, thì hãy thúc đẩy bản thân tìm kiếm điều gì đó mới mẻ mà trước đây bạn chưa nhận ra, nhận ra đại dương bao la và lặn sâu hơn một chút.
+
+                                            2. Thiếu tự chủ và tháo vát
+                                            Nếu bạn không phát triển khả năng giải quyết vấn đề cho chính mình, bạn sẽ không bao giờ thành công với tư cách là một lập trình viên.
+
+                                            Không nghi ngờ gì nữa, để trở thành một lập trình viên thành công, bạn phải tự tin vào khả năng học hỏi của CHÍNH BẠN. Đây thực sự là một kỹ năng sống cơ bản - nếu bạn trên 18 tuổi, không ai có nghĩa vụ phải dạy bạn bất cứ điều gì. Đó là thực tế. Việc tìm kiếm thông tin và sự trợ giúp là tùy thuộc vào bạn để tìm hiểu điều gì quan trọng đối với bạn.
+
+                                            Trong thế giới phát triển, tất cả thông tin bạn cần đều được tìm thấy ở nơi kỳ diệu trước đây được gọi là Siêu xa lộ thông tin (Information Super Highway). Thư viện đồ sộ này có một cánh cửa khổng lồ: Google. Biết rằng bạn có thể chỉ cần gõ bất cứ thứ gì bạn muốn vào Google và nhận thông tin bạn cần là rào cản đầu tiên phải vượt qua khi bạn muốn học các kỹ năng cần thiết trong công nghệ.
+
+                                            Ngoài việc trở thành một người tra google tốt, tất cả các ngôn ngữ lập trình đều có tài liệu và thông số kỹ thuật rất rõ ràng về cách chúng hoạt động. Nó giống như sử dụng từ điển - khi bạn thấy một từ mà bạn không nhận ra, bạn sẽ tra từ đó. Cách nhanh nhất, đáng tin cậy nhất để xây dựng kỹ năng của bạn như một lập trình viên là chỉ cần đọc tài liệu. Tất cả tài nguyên nằm trong đó.
+
+                                            Sử dụng các Nguồn lực: Bạn phải nhận ra rằng tất cả các câu trả lời bạn cần thực sự đều ở đâu đó ngoài kia. Khi bạn có một câu hỏi, buộc mình phải tra google nó trước khi hỏi người khác để có câu trả lời và kiểm tra tài liệu. Tiết kiệm thời gian của người khác khi bạn đã cố gắng và thực sự không tìm được câu trả lời mình cần.
+
+                                            3. Thiếu kiên trì khi đối mặt với một vấn đề
+                                            Nếu bạn dễ dàng bỏ cuộc khi đối mặt với các vấn đề, bạn sẽ không bao giờ thành công với tư cách là một lập trình viên.
+
+                                            Bản chất của lập trình là giải quyết vấn đề. Đó là toàn bộ lý do máy tính được phát minh! Bất cứ khi nào bạn bắt đầu làm việc trên một chương trình, bạn sẽ gặp phải một đống vấn đề. Và một khi bạn giải quyết một vấn đề, hầu như luôn có một vấn đề khác ngay sau nó. Bạn đang tiến bộ, nhưng luôn có những vấn đề mới phải đối mặt.
+
+                                            Đối mặt với đống vấn đề đó có thể khiến bạn nản lòng và chán nản. Nếu bạn cảm thấy mọi thứ chỉ nên “hoạt động”, thì bạn sẽ không có năng lượng để tiếp tục khi các vấn đề tiếp tục và từng chút một đánh gục tinh thần của bạn. Theo nghĩa đen, công việc của bạn là tìm ra lý do tại sao mọi thứ không hoạt động.
+
+                                            Thường có một hoặc hai sinh viên mỗi lớp dường như có tật gặp phải nhiều vấn đề hơn các học sinh khác - những vấn đề thường khá ngẫu nhiên và khó hiểu. Bạn càng phải đối mặt trước nhiều vấn đề thì khả năng học sâu và kỹ hơn càng tăng lên. Nếu họ có thể hiểu được những vấn đề này, họ sẽ nhanh chóng nhận ra rằng họ tự tin hơn vì họ đã đối mặt và giải quyết nhiều vấn đề hơn so với các sinh viên bình thường.
+
+                                            Kiên nhẫn chấp nhận: Bạn cần nhận ra rằng các vấn đề bình thường không phải là vấn đề, mà thực tế là thách thức. Mỗi thử thách bạn phải đối mặt và vượt qua mang lại cho bạn sự hiểu biết sâu sắc hơn và khả năng tốt hơn để đối mặt với những thử thách mới và nhanh chóng giải quyết những thử thách cũ.
+                                        </div>
+
+                                        <div class="content-socle">
+                                            <ul class="content-socle__list">
+                                                <li class="content-socle__item">
+                                                    <a href="" class="active-link content-socle__link" style="--bgc-icon: #001fff;">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="content-socle__item">
+                                                    <a href="" class="active-link content-socle__link" style="--bgc-icon: #4457e1;">
+                                                        <i class="connect__icon fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="col l-4 hide-on-mobile-tablet">
+                                <div class="category">
+                                    <h2 class="category__heading">chuyên mưc</h2>
+                                    <div class="category-main">
+                                        <ul class="category-main__list">
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">blog</a>
+                                            </li>
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">freelance</a>
+                                            </li>
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">đầu tư</a>
+                                            </li>
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">phần tích</a>
+                                            </li>
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">công nghệ</a>
+                                            </li>
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">tích lủy</a>
+                                            </li>
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">hướng dẫn làm maketting onilne</a>
+                                            </li>
+                                            <li class="category-main__item">
+                                                <a href="" class="active-link category-main__link">tiếp thị liên kêt</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="banner">
+
+                                </div>
+
+
+                                <div class="category">
+                                    <h2 class="category__heading">bài viết hay</h2>
+                                    <div class="category-main">
+                                        <ul class="category-main__list">
+                                            <li class="category-main__item">
+                                                <div class="category-post">
+                                                    <div class="grid">
+                                                        <div class="row category-post__pb">
+                                                            <div class="col l-3">
+                                                                <div class="main-post__black">
+                                                                    <img src="https://images.unsplash.com/photo-1573166364902-982ae58a27ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="" class="main-post__image" />
+                                                                    <div class="overlay main-post__overlay"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l-9">
+                                                                <div class="main-post__box">
+                                                                    <div class="main-post__list">
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">lập trình</a>
+                                                                        </il>
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">tư duy</a>
+                                                                        </il>
+                                                                    </div>
+
+                                                                    <a href="" class="active-link main-post__title">
+                                                                        chia sẽ kinh nghiệm quá trình đi làm lập trình backend thật tế ở công ty tại sài gòn
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row category-post__pb">
+                                                            <div class="col l-3">
+                                                                <div class="main-post__black">
+                                                                    <img src="https://images.unsplash.com/photo-1573166364902-982ae58a27ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="" class="main-post__image" />
+                                                                    <div class="overlay main-post__overlay"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l-9">
+                                                                <div class="main-post__box">
+                                                                    <div class="main-post__list">
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">lập trình</a>
+                                                                        </il>
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">tư duy</a>
+                                                                        </il>
+                                                                    </div>
+
+                                                                    <a href="" class="active-link main-post__title">
+                                                                        chia sẽ kinh nghiệm quá trình đi làm lập trình backend thật tế ở công ty tại sài gòn
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row category-post__pb">
+                                                            <div class="col l-3">
+                                                                <div class="main-post__black">
+                                                                    <img src="https://images.unsplash.com/photo-1573166364902-982ae58a27ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="" class="main-post__image" />
+                                                                    <div class="overlay main-post__overlay"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l-9">
+                                                                <div class="main-post__box">
+                                                                    <div class="main-post__list">
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">lập trình</a>
+                                                                        </il>
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">tư duy</a>
+                                                                        </il>
+                                                                    </div>
+
+                                                                    <a href="" class="active-link main-post__title">
+                                                                        chia sẽ kinh nghiệm quá trình đi làm lập trình backend thật tế ở công ty tại sài gòn
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row category-post__pb">
+                                                            <div class="col l-3">
+                                                                <div class="main-post__black">
+                                                                    <img src="https://images.unsplash.com/photo-1573166364902-982ae58a27ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="" class="main-post__image" />
+                                                                    <div class="overlay main-post__overlay"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l-9">
+                                                                <div class="main-post__box">
+                                                                    <div class="main-post__list">
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">lập trình</a>
+                                                                        </il>
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">tư duy</a>
+                                                                        </il>
+                                                                    </div>
+
+                                                                    <a href="" class="active-link main-post__title">
+                                                                        chia sẽ kinh nghiệm quá trình đi làm lập trình backend thật tế ở công ty tại sài gòn
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row category-post__pb">
+                                                            <div class="col l-3">
+                                                                <div class="main-post__black">
+                                                                    <img src="https://images.unsplash.com/photo-1573166364902-982ae58a27ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="" class="main-post__image" />
+                                                                    <div class="overlay main-post__overlay"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col l-9">
+                                                                <div class="main-post__box">
+                                                                    <div class="main-post__list">
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">lập trình</a>
+                                                                        </il>
+                                                                        <il class="main-post__item">
+                                                                            <a href="" class="active-link main-post__link">tư duy</a>
+                                                                        </il>
+                                                                    </div>
+
+                                                                    <a href="" class="active-link main-post__title">
+                                                                        chia sẽ kinh nghiệm quá trình đi làm lập trình backend thật tế ở công ty tại sài gòn
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="banner">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="container__widt">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="footer__wrapper">
+                                   <h4 class="footer__heading">về trung tôi</h4>
+                                    <div class="footer-main">
+                                        <div class="footer-main__box">
+                                            <img src="./asset/images/logo.jpg" alt="" class="footer-main__image">
+                                        </div>
+                                        <div class="footer-main__txt">
+                                            Minh Tiến It là Trang Blog cá nhân chuyên chia sẽ như lập trình, kiếm tiến online và kinh nghiệm và kiên thức tại đây bạn có thể học tập thêm nhiều kiên thức mới để bước chân đi làm
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <div class="footer__wrapper">
+                                    <h4 class="footer__heading">thông tin</h4>
+                                    <div class="footer-main">
+                                        <ul class="footer-main__list">
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">chỉnh sách bảo mật</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <div class="footer__wrapper">
+                                    <h4 class="footer__heading">hổ trợ khánh hàng</h4>
+                                    <div class="footer-main">
+                                        <ul class="footer-main__list">
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">tin mới</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">lập trình</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">maketting online</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">làm seo</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">chạy quảng cáo</a>
+                                            </li>
+                                        </ul>                                
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="footer__wrapper">
+                                    <h4 class="footer__heading">kết nối</h4>
+                                    <div class="footer-main">
+                                        <div class="connect">
+                                            <ul class="connect__list">
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: #001fff;">
+                                                        <i class="connect__icon fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: #4457e1;">
+                                                        <i class="connect__icon fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: #4457e1;">
+                                                        <i class="connect__icon fab fa-google-plus-g"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: black;">
+                                                        <i class="connect__icon far fa-envelope"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>      
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+</body>
+<script src="./asset/js/main.js"></script>
+</html>

@@ -1,0 +1,349 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+a:link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+/* Header */
+header {
+    background-color: #406F7D;
+}
+
+header .col-left, header .col-right {
+    flex: 1;
+}
+
+header .logo {
+    padding: 10px 0px;
+}
+
+header .search {
+    text-align: right;
+    padding: 20px 0px;
+}
+
+header .search .input-search {
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+    max-width: 263px;
+}
+
+header .search button {
+    border: navajowhite;
+    font-size: 15px;
+    padding: 8px;
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* MENU */
+#nav {
+    background-color: #2A505B;
+}
+#nav ul li {
+    float: left;
+}
+
+#nav ul li a {
+    padding: 15px 20px;
+    display: block;
+    color: white;
+}
+
+#nav ul li:hover a {
+    background-color: white;
+    color: #2A505B;
+}
+
+#nav ul ul {
+    position: absolute;
+    display: none;
+    max-width: 200px;
+    width: 100%;
+    /* note */
+}
+
+#nav ul li:hover > ul {
+    display: block;
+}
+
+#nav ul ul li {
+    float: none;
+    position: relative;
+}
+
+#nav ul ul li a {
+    background-color: #284d58 !important;
+    color: white !important;
+}
+#nav ul ul li:hover a {
+    background-color:#e0e0e0 !important;
+    color: #284d58 !important;
+}
+
+
+#nav ul ul ul {
+    position: absolute;
+    z-index: 9999;
+    left: 200px;
+    top: 0;
+    display: none;
+}
+
+#nav ul ul li:hover > ul {
+    display: block;
+}
+
+/* BOX CONTENT */
+.box-content {
+    background-color: #F1F1F1;
+}
+
+.box-content .col-left {
+    flex: 7.5;
+}
+
+.box-content .col-right {
+    flex: 2.5;
+}
+
+.post-new {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-new .item {
+    flex: 33.33%;
+}
+
+.post-new .item .image img {
+    width: 100%;
+}
+
+.post-new .item .content {
+    margin: 10px;
+}
+
+.post-new .item .content h3 {
+    height: 40px;
+    overflow: hidden;
+}
+
+.post-new .item .content h3 a {
+    color: #2a505b;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+/* Posts */
+.posts {
+    margin-top: 10px;
+}
+
+.posts .item {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #aea9a9;
+    margin-bottom: 10px;
+}
+
+.posts .item:hover img {
+    transform: scale(1.2);
+}
+
+.posts .item .col-left {
+    flex: 4;
+}
+.posts .item .col-left .image {
+    overflow: hidden;
+}
+
+.posts .item .col-left img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.posts .item .col-right {
+    flex: 6;
+}
+
+.posts .item .content {
+    margin-left: 15px;
+}
+
+.posts .item .content h3 {
+    margin-bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.posts .item .content h3 a {
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    color: #2a505b;
+}
+
+.posts .item .content .info {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.posts .item .content .info span {
+    margin-right: 45px;
+    color: #383838;
+    font-size: 14px;
+}
+
+.posts .item .content .info i,
+.posts .item .content .info a {
+    color: #383838;
+}
+
+.posts .item .content .description {
+    font-size: 14px;
+    line-height: 1.3em;
+    text-align: justify;
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.posts .item .readmore {
+    text-align: right;
+}
+
+.posts .item .readmore a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+aside{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.box-thead{
+    background-color: #2A505B;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+.popular_post .image{
+    float: left;
+    width: 30%;
+    height: 65px;
+}
+.popular_post .item a img{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+.popular_post .title{
+    float: left;
+    width: 70%;
+}
+.popular_post .item .box {
+    background-color: white;
+    padding: 5px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.popular_post .box a{
+    margin-left: 5px;
+    display: block;
+    height: 40px;
+    line-height: 1.3em;
+    overflow: hidden;
+    color: #485c62;
+    font-weight: bold;
+    font-size: 14px;
+}
+.tag {
+    margin-top: 10px;
+}
+
+.tag li {
+    display: inline-block;
+}
+
+.tag li a {
+    display: block;
+    padding: 3px 5px;
+    background-color: #336877;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.latest {
+    margin-top: 20px;
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font -->
+    <link rel="stylesheet" href="./asset/font/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./asset/css/reset.css" />
+    <link rel="stylesheet" href="./asset/css/grid.css" />
+    <link rel="stylesheet" href="./asset/css/base.css" />
+    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="./asset/css/mobile.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__wrapper">
+                <!--  header__hide -->
+                <div class="header__wra">
+                    <div class="container__widt">
+                        <div class="header-logo">
+                            <a href="" class="header-logo__link">
+                                <img src="./asset/images/logo.jpg" alt="" class="header-logo__image" />
+                            </a>
+                        </div>
+
+                        <div class="header-search hide-on-mobile-tablet">
+                            <div class="header-search__war">
+                                <button class="header-search__btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <input type="text" class="header-search__input" placeholder="Tìm Kiếm">
+                            </div>
+                        </div>
+
+                        <div class="header-username__wrapper hide-on-mobile">
+                            <div class="header-username">
+                                <!-- <a href="" class="active-link header-username__link ">
+                                <i class="fas fa-user-circle"></i>
+                            </a> -->
+
+
+                                <label for="showaccount" class="header-username__label">
+                            <img src="./asset/images/thumb3.png" alt="" class="header-username__image">
+                            </label>
+
+                                <input type="checkbox" hidden class="show_box" id="showaccount">
+
+                                <div class="header-username__box">
+                                    <h2 class="header-username__heading">tài khoảng</h2>
+                                    <div class="header-box__war">
+                                        <div class="header-box__wrapper">
+                                            <img src="./asset/images/thumb3.png" alt="" class="header-box__image">
+                                        </div>
+                                        <div class="header-box__wrapper">
+                                            <h3 class="header-box__name">họ ten</h3>
+                                        </div>
+
+                                        <div class="header-box__wrapper">
+                                            <a href="" class="active-link header-box__link">Đăng xuất</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar ">
+                    <!-- navbar__fixed -->
+                    <div class="container__widt">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col m-6 c-6 pc-on-hide mobile-d-flex">
+                                    <label for="mobile__navbar__btn" class="mobile-header__btn  pc-on-hide show-on-mobile-tablet">
+                                        <i class="fas fa-list"></i>
+                                    </label>
+                                    
+                                    <input type="checkbox" class="mobile__navbar__btn" id="mobile__navbar__btn">
+                                   
+                                    <label for="mobile__navbar__btn" class="mobile-header__close mobile__navbar__close">
+                                        <i class="fas fa-times"></i>
+                                    </label>
+
+                                    <label for="mobile__navbar__btn" class="overlay mobile-navbar__overlay"></label>
+                                    <div class="mobile-navbar__wrapper">
+                                        <div class="mobile-username">
+                                            <a href="" class="active-link header-username__link hide-on-mobile-tablet">
+                                                <i class="fas fa-user-circle"></i>
+                                            </a>
+
+                                            <div class="mobile-username__image">
+                                                <img src="./asset/images/thumb3.png" alt="" class="mobile-username__image">
+                                            </div>
+
+                                            <div class="mobile-username__info">
+                                                <h2 class="mobile-username__name">nguyen minh tien</h2>
+                                                <p class="mobile-username__email">minhtien003@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="navbar-main">
+                                            <ul class="navbar-main__list ">
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">trang chủ</a>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">tin tức</a>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">lập trình</a>
+                                                    <div class="navbar-main__btn btn__down">
+                                                         <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                    </div>
+                                                    <div class="navbar-main__btn btn__up hide-on-mobile-tablet">
+                                                         <i class="fas fa-chevron-up navbar-main__icon"></i>
+                                                    </div>
+                                                   
+                                                    <div class="navbar-dropdown down hide-on-mobile-tablet">
+                                                        <div class="navbar-dropdown__wrapper">
+                                                            <ul class="navbar-dropdown__list">
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình php</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình javascript</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình nodejs</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình python</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">Lập Trình java</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">tình yêu</a>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">công nghệ</a>
+                                                    <div class="navbar-main__btn btn__down">
+                                                        <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                   </div>
+                                                   <div class="navbar-main__btn btn__up hide-on-mobile-tablet">
+                                                      <i class="fas fa-chevron-up navbar-main__icon"></i>
+                                                   </div>  
+                                                   
+                                                    <div class="navbar-dropdown down ">
+                                                        <div class="navbar-dropdown__wrapper">
+                                                            <ul class="navbar-dropdown__list">
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">nhúng</a>
+                                                                </li>
+                                                                <li class="navbar-dropdown__item">
+                                                                    <a href="" class="active-link navbar-dropdown__link">AI</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="navbar-main__item">
+                                                    <a href="" class="active-link navbar-main__link">giói thiệu</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l-6 m-6 c-6">
+                                    <h4 class="navbar__heading pc-on-hide show-on-mobile-tablet">blog minh tiến</h4>
+                                </div>
+                                <div class="col l-6 m-8 c-0 hide-on-mobile-tablet">
+                                    <div class="navbar-main pc">
+                                        <ul class="navbar-main__list hide-on-mobile">
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">trang chủ</a>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">tin tức</a>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">lập trình</a>
+                                                <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                <div class="navbar-dropdown">
+                                                    <div class="navbar-dropdown__wrapper">
+                                                        <ul class="navbar-dropdown__list">
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình php</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình javascript</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình nodejs</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình python</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">Lập Trình java</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">tình yêu</a>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">công nghệ</a>
+                                                <i class="fas fa-chevron-down navbar-main__icon"></i>
+                                                <div class="navbar-dropdown">
+                                                    <div class="navbar-dropdown__wrapper">
+                                                        <ul class="navbar-dropdown__list">
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">nhúng</a>
+                                                            </li>
+                                                            <li class="navbar-dropdown__item">
+                                                                <a href="" class="active-link navbar-dropdown__link">AI</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="navbar-main__item">
+                                                <a href="" class="active-link navbar-main__link">giói thiệu</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="main-container ">
+                <div class="container__widt">
+                  <div class="form">
+                        <h2 class="form__heading">đăng nhập</h2>
+                        <form action="" method="post">
+                            <div class="form-main">
+                                <div class="form-main__row">
+                                        <label for="" class="form-main__leabel">tên</label>
+                                        <input type="text" class="form-main__input">
+                                </div>
+
+                                <div class="form-main__row">
+                                        <label for="" class="form-main__leabel">Gmail</label>
+                                        <input type="text" class="form-main__input">
+                                </div>
+
+                                <div class="form-main__row">
+                                        <label for="" class="form-main__leabel">Mật khẩu</label>
+                                        <input type="text" class="form-main__input">
+                                </div>
+
+                                <div class="form-main__row">
+                                        <label for="" class="form-main__leabel">nhập lại mật khẩu</label>
+                                        <input type="text" class="form-main__input">
+                                </div>
+
+                                <div class="form-main__row form-main__button">
+                                        <button class="btn form-main__btn">đăng nhập</button>
+
+                                        <div class="form-main__sociai">
+
+                                        </div>
+                                </div>
+                            </div>
+                        </form>
+                  </div>
+              </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="container__widt">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="footer__wrapper">
+                                   <h4 class="footer__heading">về trung tôi</h4>
+                                    <div class="footer-main">
+                                        <div class="footer-main__box">
+                                            <img src="./asset/images/logo.jpg" alt="" class="footer-main__image">
+                                        </div>
+                                        <div class="footer-main__txt">
+                                            Minh Tiến It là Trang Blog cá nhân chuyên chia sẽ như lập trình, kiếm tiến online và kinh nghiệm và kiên thức tại đây bạn có thể học tập thêm nhiều kiên thức mới để bước chân đi làm
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <div class="footer__wrapper">
+                                    <h4 class="footer__heading">thông tin</h4>
+                                    <div class="footer-main">
+                                        <ul class="footer-main__list">
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">chỉnh sách bảo mật</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">liên hệ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="col l-3 m-6 c-6">
+                                <div class="footer__wrapper">
+                                    <h4 class="footer__heading">hổ trợ khánh hàng</h4>
+                                    <div class="footer-main">
+                                        <ul class="footer-main__list">
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">tin mới</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">lập trình</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">maketting online</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">làm seo</a>
+                                            </li>
+                                            <li class="footer-main__item">
+                                                <a href="" class="active-link footer-main__link ">chạy quảng cáo</a>
+                                            </li>
+                                        </ul>                                
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="footer__wrapper">
+                                    <h4 class="footer__heading">kết nối</h4>
+                                    <div class="footer-main">
+                                        <div class="connect">
+                                            <ul class="connect__list">
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: #001fff;">
+                                                        <i class="connect__icon fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: #4457e1;">
+                                                        <i class="connect__icon fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: #4457e1;">
+                                                        <i class="connect__icon fab fa-google-plus-g"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="connect__item">
+                                                    <a href="" class="active-link connect__link" style="--bgc-icon: black;">
+                                                        <i class="connect__icon far fa-envelope"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>      
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<div id="backtop" class="backtop pc-on-hide">
+    <i class="fas fa-chevron-up"></i>
+</div>
+
+</body>
+<script src="./asset/js/main.js"></script>
+
+</html>
